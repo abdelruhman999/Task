@@ -3,6 +3,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { BsBell } from "react-icons/bs"; 
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
+import List_navbar from './List_navbar';
 
 export default function Navpar() {
   const [active , setActive] = useState(0)
@@ -89,16 +90,18 @@ export default function Navpar() {
         className={`cursor-pointer ${active === 1 ? ' bg-[#58BEBF] text-white text-sm w-[79px] h-[40px] rounded-[101px] ': ''} p-[10px]`}>Wedding</p>
       {
         active === 1 &&
-        <div className='flex bg-gray-100 rounded-lg 
-          pl-[15px] pb-[20px] pt-[15px]
-          absolute top-[50px] left-[20px] w-[180px] gap-[40px]
-          flex-col items-start z-10 font-semibold'>
-          <p>Classic</p>
-          <p>Modern</p>
-          <p>Floral</p>
-          <p>Greenery</p>
-          <p>Romantic</p>
-        </div>
+       
+            <List_navbar
+         
+            li={[
+              'Classic',
+              'Modern',
+              ' Floral',
+              'Greenery',
+              'Romantic'
+            ]}
+            />
+     
       }
      </div>
      <div
@@ -112,15 +115,16 @@ export default function Navpar() {
 
       {
         active === 2 &&
-        <div className='flex bg-gray-100 rounded-lg 
-        pl-[15px] pb-[20px] pt-[15px]
-         absolute top-[50px] left-[20px] w-[150px] gap-[40px]
-          flex-col items-start z-10 font-semibold'>
-          <p>New porn</p>
-          <p>Baby shower</p>
-          <p>Bachelorhood</p>
-         
-        </div>
+        <List_navbar
+      
+        li={[
+          'New porn',
+          'Baby shower',
+          ' Bachelorhood',
+        
+        ]}
+        />
+       
       }
      </div>
      <div
@@ -135,15 +139,16 @@ export default function Navpar() {
 
       {
         active === 3 &&
-        <div className='flex bg-gray-100 rounded-lg 
-        pl-[15px] pb-[20px] pt-[15px]
-         absolute top-[50px] left-[20px] w-[250px] gap-[40px]
-          flex-col items-start z-10 font-semibold'>
-          <p>Lanch Parties</p>
-          <p>Business Anniversaries</p>
-          <p>Soft Openings</p>
-         
-        </div>
+        <List_navbar
+      
+        li={[
+          'Lanch Parties',
+          'Business Anniversaries',
+          ' Soft Openings',
+        
+        ]}
+        />
+       
       }
      </div>
      <div
@@ -158,15 +163,16 @@ export default function Navpar() {
 
       {
         active === 4 &&
-        <div className='flex bg-gray-100 rounded-lg 
-        pl-[15px] pb-[20px] pt-[15px]
-         absolute top-[50px] left-[20px] w-[250px] gap-[40px]
-          flex-col items-start z-10 font-semibold'>
-          <p>Birthday</p>
-          <p>Graduation</p>
-          <p>parties</p>
-         
-        </div>
+      
+                <List_navbar
+        
+                li={[
+                  ' Birthday',
+                  ' Graduation',
+                  '  parties',
+                
+                ]}
+              />
       }
      </div>
      <div
@@ -181,16 +187,18 @@ export default function Navpar() {
 
       {
         active === 5 &&
-        <div className='flex bg-gray-100 rounded-lg 
-        pl-[15px] pb-[20px] pt-[15px]
-         absolute top-[50px] left-[20px] w-[250px] gap-[40px]
-          flex-col items-start z-10 font-semibold'>
-          <p>Save the date</p>
-          <p>Baby Shower</p>
-          <p>Bachelorette</p>
-          <p>Professional</p>
-         
-        </div>
+
+        <List_navbar
+        
+        li={[
+          ' Save the date',
+          ' GraBaby Showerduation',
+          '  Bachelorette',
+          '  Professional',
+        
+        ]}
+      />
+       
       }
      </div>
 
@@ -206,14 +214,12 @@ export default function Navpar() {
 
       {
         active === 6 &&
-        <div className='flex bg-gray-100 rounded-lg 
-        pl-[15px] pb-[20px] pt-[15px]
-         absolute top-[50px] left-[20px] w-[250px] gap-[40px]
-          flex-col items-start z-10 font-semibold'>
-          <p>After Partise</p>
-          
-         
-        </div>
+        <List_navbar
+        
+        li={[
+          ' After Partise',
+        ]}
+      />
       }
      </div>
      

@@ -17,29 +17,31 @@ export default function Why_you_choose_us() {
         width={708}
        />
   
-    <div className='flex   gap-[400px]'>
+    <div className='flex  xs:items-center xs:flex-col-reverse xs:gap-[20px] gap-[400px]'>
 
-      <div className='flex flex-col gap-[10px]'>
+      <div className='flex   flex-col gap-[10px]'>
 
-      <div className='flex  gap-[20px]'>
-          <FaRegStar className='text-4xl'/>
+      <div className='flex xs:gap-[10px] gap-[20px]'>
+          <FaRegStar className='text-4xl xs:text-2xl'/>
 
         <div className='flex flex-col gap-[10px]'>
-          <p className='font-normal text-[24px]
+          <p className='font-normal  text-[24px]
           leading-[32px]'>
             Diverse Designs
           </p>
           <p className='font-normal text-[16px]
-          leading-[21px] text-wrap w-[491px]'>
+          leading-[21px] text-wrap xs:leading-normal
+          xs:w-[300px] xs:text-xs w-[491px]'
+          >
            A collection of ready-made designs that can be easily customized in minutes.
           </p>
         </div>
-        <MdKeyboardArrowUp className='text-4xl'/>
+        <MdKeyboardArrowUp className='text-4xl xs:text-2xl'/>
       </div>
 
       <div className='bg-gray-200 w-full h-[0.5px]'></div>
 
-      <Word text='Custom Design'/>
+        <Word text='Custom Design'/>
      
       <div className='bg-gray-200 w-full h-[0.5px]'></div>
 
@@ -74,9 +76,11 @@ export default function Why_you_choose_us() {
       </div>
       </div>
 
-      <div className=' relative'>
-        <img src={logo2}  className='w-[291.6875915527344px]  h-[556px] rounded-[13.68px]' alt="" />
-        <div className='absolute top-[-50px] left-[-100px]
+   
+
+      <div className=' relative xs:pl-[80px] '>
+        <img src={logo2}  className='w-[291.6875915527344px]   h-[556px] rounded-[13.68px]' />
+        <div className='absolute top-[-50px] xs:left-[-20px] left-[-100px]
          w-[305.98687744140625px] h-[543.9767456054688px]
         bg-[#EBF7F7] rounded-[12.83px] flex flex-col 
         gap-[10px] pt-[40px] items-center'>
@@ -106,10 +110,11 @@ export default function Why_you_choose_us() {
           </div>
         </div>
       </div>
+    </div>
 
     </div>
 
 
-    </div>
+  
   )
 }

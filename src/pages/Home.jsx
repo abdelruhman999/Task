@@ -26,6 +26,7 @@ export default function Home() {
     text4='Exclusive partner collections with world-class designers'
     text5='Send in minutes via email, text, or shareable link'
     logo={logo1}
+     flexDirection='row-reverse xs:flex-col'
     />
     <Card_invitations
       text1='Animated invitations'
@@ -34,7 +35,8 @@ export default function Home() {
       text4='Hundreds of free designs for any occasion'
       text5='Send in minutes via email, text, or shareable link'
     logo={logo2}
-    flexDirection='row-reverse'
+    flexDirection='row-reverse xs:flex-col'
+    
     />
     <Suggestion/>
     <Subscription_plans/>

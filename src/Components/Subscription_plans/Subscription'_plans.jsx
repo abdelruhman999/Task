@@ -9,7 +9,7 @@ export default function Subscription_plans() {
               header="Subscription plans"
               text="Choose from our wide collections of invitations based on your special mood"
         />
-        <div className='flex gap-[20px]'>
+        <div className='flex xs:flex-wrap xs:justify-center gap-[20px]'>
 
         <Curds 
         number1 = "25"
